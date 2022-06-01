@@ -77,7 +77,7 @@ a:focus {
     text-decoration: none;
 }
 /* -Resets- */
-html, body { 
+html, body {
     background-color: #111;
     background: url(../images/bg.png);
     background-repeat: repeat;
@@ -100,7 +100,7 @@ h1 {
     font-size: 2.25rem; /* 36px */
     font-family: Anurati, sans-serif;
     letter-spacing: 5px;
-} 
+}
 h2 {
     font-size: 1.50rem; /* 24px */
     font-weight: 500;
@@ -164,7 +164,7 @@ ul {
 	margin-bottom: 6em; /* 96px */
 }
 .large-margin {
-	margin-bottom: 12em; /* 192px */
+	margin-bottom: 1em; /* 192px */
 }
 /* -<hr>- */
 hr {
@@ -283,7 +283,7 @@ button {
     -o-transform: translate(0px, -100%);
     -ms-transform: translate(0px, -100%);
     transform: translate3d(0px, -100%, 0px);
-    -webkit-transition: all 0.5s ease; 
+    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -397,7 +397,7 @@ button {
     position: relative;
     margin-top: 35vh;
     color: #FFF;
-	text-shadow: none; 
+	text-shadow: none;
     padding: 20px;
     z-index: 5;
     text-align: right;
@@ -410,7 +410,10 @@ button {
 
 /* --------------------------- /////////// V. ABOUT SECTION /////////// --------------------------- */
 #support-image {
-    margin: 0 0 0 20%;
+    margin: 0 0 0 10%;
+    height: 85%;
+    width: 75%;
+    border-radius: 50px;
 }
 /* --------------------------- /////////// VI. GAMES SECTION /////////// --------------------------- */
 .game-tags {
@@ -671,7 +674,7 @@ button {
     left: 0;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    text-align: center; 
+    text-align: center;
     padding: 40% 20px 20px 20px;
     z-index: 5;
     opacity: 0;
@@ -731,7 +734,7 @@ button {
     margin-left: -10px;
     font-family: fontawesome;
 }
-.modal-body .skill-list {   
+.modal-body .skill-list {
     margin: 10px 0;
 }
 .modal-body .skill-list li {
@@ -830,7 +833,7 @@ button {
     color: #E48632;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     padding: 10px;
-    
+
 }
 #contact ul li p {
     display: inline;
@@ -987,7 +990,7 @@ button {
         margin: 20px 0;
     }
     #newsletter button {
-        width: 100%; 
+        width: 100%;
         display: block;
     }
     #contactForm {
