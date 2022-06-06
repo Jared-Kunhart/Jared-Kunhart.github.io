@@ -129,7 +129,10 @@ p {
     letter-spacing: 5px;
 }
 .text-center {
-	text-align: center;
+    color: #fff;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 1.30rem;
 }
 .text-left {
     text-align: left;
