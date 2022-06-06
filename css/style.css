@@ -788,6 +788,28 @@ button {
     height: 43px;
     width: auto;
 }
+
+#newwindowlinks {
+    text-decoration: none;
+    color: #999999;
+}
+
+#newwindowlink {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#newwindowlinklive {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Open Sans, sans-serif;
+}
+
+#newwindowlinklive:hover {
+    text-decoration: none;
+    color: #ffffffc1;
+    font-family: Open Sans, sans-serif;
+}
 /* --------------------------- /////////// IX. CONTACT SECTION /////////// --------------------------- */
 #contactForm {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
