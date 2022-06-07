@@ -1,6 +1,6 @@
 $(document).ready(function(){
     "use strict";
-    
+
     // NAVBAR RESIZE FUNCTION
     $(window).scroll( function() {
         var value = $(this).scrollTop();
@@ -9,12 +9,12 @@ $(document).ready(function(){
         else
             $(".navbar-dark").removeClass("scrolled");
     });
-    
+
     // HAMBURGER MENU ANIMATION
     	$('#hamburger').on("click", function(){
             $(this).toggleClass('open');
 	   });
-    
+
     // HERO TEXT ANIMATION
     $("#moving-text").Morphext({
         animation: "fadeInDown",
@@ -24,7 +24,7 @@ $(document).ready(function(){
             $("#hero-slider").carousel("next")
         }
     });
-    
+
     // SMOOTH SCROLLING TO ANCHORS
         $('a[href*=\\#]:not([href=\\#]):not(.control-right, .control-left)').on('click', function() {
             if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
@@ -38,10 +38,10 @@ $(document).ready(function(){
           }
         }
       });
-    
+
     // LAZY LOADING IMAGES
     var bLazy = new Blazy();
-    
+
     // ANIMATIONS
     var $animation_elements = $('.animation-element');
     var $window = $(window);
@@ -66,7 +66,7 @@ $(document).ready(function(){
     }
     $window.on('scroll resize', check_if_in_view);
     $window.trigger('scroll');
-    
+
     //STOP VIDEO FROM PLAYING AFTER CLOSING A MODAL
     $("body").on('hidden.bs.modal', function (e) {
         var $iframes = $(e.target).find("iframe");
@@ -74,17 +74,17 @@ $(document).ready(function(){
             $(iframe).attr("src", $(iframe).attr("src"));
          });
      });
-    
+
     // LIGHTBOX OPTIONS
      lightbox.option({
         'resizeDuration': 500,
         'imageFadeDuration': 500,
         'wrapAround': true
     });
-    
+
     // VIDEO LIGHTBOX
     $(".js-video-button").modalVideo();
-    
+
     // LOAD GOOGLE MAP
    google.maps.event.addDomListener(window, 'load', init);
          function init() {
@@ -95,14 +95,14 @@ $(document).ready(function(){
                     zoom: 11,
 
                     // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+                    center: new google.maps.LatLng(41.8823821, -87.61936659999999), // New York
 
-                    // How you would like to style the map. 
+                    // How you would like to style the map.
                     // This is where you would paste any style found on Snazzy Maps.
                    styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"lightness":20},{"color":"#000000"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative.country","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"}]},{"featureType":"administrative.province","elementType":"geometry.fill","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"administrative.province","elementType":"labels.text.stroke","stylers":[{"weight":"0.01"},{"invert_lightness":true},{"color":"#f26c4f"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"visibility":"simplified"},{"weight":"0.05"},{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#E48632"},{"weight":"0.10"},{"invert_lightness":true},{"lightness":29}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#E48632"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry","stylers":[{"weight":"0.30"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
                 };
 
-                // Get the HTML DOM element that will contain your map 
+                // Get the HTML DOM element that will contain your map
                 // We are using a div with id="map" seen below in the <body>
                 var mapElement = document.getElementById('map-canvas');
 
@@ -112,17 +112,17 @@ $(document).ready(function(){
                 // Let's also add a marker while we're at it
                 var image = 'images/map_marker.png';
                 var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    position: new google.maps.LatLng(41.8823821, -87.61936659999999),
                     map: map,
                     icon: image,
                     title: 'Snazzy!'
                 });
             }
-    
+
     //COPYRIGHT YEAR
     var date = new Date().getFullYear();
     document.getElementById("year").innerHTML = date;
-    
+
     // FORM SCRIPTS
     $("#contactForm").validator().on("submit", function(event) {
         if (event.isDefaultPrevented()) {
@@ -177,7 +177,7 @@ $(document).ready(function(){
         }
         $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
     }
-    
+
     // NEWSLETTER SIGNUP SCRIPTS
     $("#newsletter").validator().on("submit", function(event) {
         if (event.isDefaultPrevented()) {
@@ -230,7 +230,7 @@ $(document).ready(function(){
         }
         $("#msgSignup").removeClass().addClass(msgClasses).text(msg);
     }
-            
+
 });
 window.onload = function() {
     //INITIALIZE ISOTIPE
@@ -246,10 +246,10 @@ window.onload = function() {
         $container.isotope({ filter: selector });
         return false;
     });
-    
+
     // HIDE LOADING SCREEN WHEN PAGE IS LOADED
     $('#progress').animate({ width:'100%'}, 300, function() {
         $('#loader-wrapper').addClass('loaded');
     });
-    
+
 }
