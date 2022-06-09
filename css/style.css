@@ -814,12 +814,12 @@ button {
     font-family: Open Raleway, sans-serif;
 }
 /* --------------------------- /////////// IX. CONTACT SECTION /////////// --------------------------- */
-#contactForm {
+#contactFormSub {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     padding: 5%;
     margin-top: 25px;
 }
-#contactForm input {
+#contactFormSub input {
     width: 100%;
     color: #FFF;
     background: none;
@@ -829,7 +829,7 @@ button {
     border-top: none !important;
     margin-bottom: 25px;
 }
-#contactForm textarea {
+#contactFormSub textarea {
     width: 100%;
     color: #FFF;
     background: none;
@@ -839,7 +839,7 @@ button {
     border-top: none !important;
     margin-bottom: 25px;
 }
-#contactForm .button {
+#contactFormSub .button {
     margin-left: 0;
     padding: 15px 25px;
     font-size: 1.25rem;
