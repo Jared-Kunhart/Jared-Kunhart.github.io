@@ -100,7 +100,7 @@
         <div class="row hero-unit">
             <div class="col-xl-5 col-md-12">
                 <div class="hero-caption"><!-- Main Tagline -->
-                    <h1>Hi! This is Jared <br> I am a <br><span id="moving-text" class="colored">Software Engineer, Frontend Developer, Backend Developer</span></h1>
+                    <h1>Hi! This is Jared <br> I am a <br><span id="moving-text" class="colored">Problem Solver, Software Engineer, Father</span></h1>
                 </div>
             </div>
             <div class="col-xl-7 col-md-12">
@@ -171,9 +171,6 @@
                 </div>
             </div>
             <div class="row ">
-                <div class="col-md-11 small-margin">
-                   <p>This is a list of projects I made while at App Academy. Each Project had a timeline of 1 week.</p>
-                </div>
                 <div class="col-md-12">
                     <!-- <ul class="game-tags">
                         <li>Sort By Tag :</li>
@@ -185,7 +182,67 @@
                 </div>
             </div>
             <div class="games-portfolio ">
-                <!-- Game Card Video -->
+                <!-- Animal Rescue Trends Card -->
+                <div class="row game-card mobile">
+                    <div class="col-lg-12 col-xl-5 game-card-left">
+                        <a href="images/cfclarge.png" data-lightbox="screenshots_dark">
+                            <div class="overlay">
+                                <i class="fa fa-picture-o fa-3x"></i>
+                            </div>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/cfclarge.png">
+                                <source media="(min-width: 768px)" srcset="images/cfclarge.png">
+                                <img src="images/cfcsmall.png" data-src="images/cfcsmall.png" class="img-fluid b-lazy" alt="aurora image">
+                            </picture>
+                        </a>
+                        <a href="images/comparison.png" data-lightbox="screenshots_dark"></a>
+                        <a href="images/othertrends.png" data-lightbox="screenshots_dark"></a>
+                    </div>
+                    <div class="col-lg-12 col-xl-7 game-card-right">
+                        <h2 class="short-hr-left">Animal Rescue Trends</h2>
+                        <p class="game-description">Interactive data dashboard that can be used to analyze how different dog characteristics may correlate with average length of stay in a shelter prior to adoption.
+                            <span class="expand colored strong" data-toggle="modal" data-target="#game5">Read More</span></p>
+                        <a id="newwindowlinklive" target="_blank" rel="noreferrer" href="https://codeforchicago-rescuechi.herokuapp.com/">- Live site link</a>
+                        <div style="display: flex; justify-content: flex-end">
+                            <i class="devicon-heroku-plain-wordmark colored" title="Heroku" style="font-size: 150%; padding-right: 5px; align-self: flex-end;"></i>
+                            <i class="devicon-postgresql-plain-wordmark" title="PostgreSQL" style="font-size: 150%; padding-right: 5px; align-self: flex-end;"></i>
+                            <i class="devicon-python-plain-wordmark" title="Python" style="font-size: 150%; padding-right: 5px; align-self: flex-end;"></i>
+                            <i class="devicon-pandas-original" title="pandas" style="font-size: 150%; padding-right: 5px; align-self: flex-end;"></i>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade game-modal" id="game5" tabindex="-1" role="dialog" aria-labelledby="echo" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title" id="echo">Animal Rescue Trends</h1>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h2 class="short-hr-left">Trends by Length of Stay</h2>
+                                    <p>The interactive data visualizations on the Breed Trends page and Other Trends can be used to illustrate how different dog characteristics affect the average length of stay of dogs in a shelter or foster placement prior to adoption.</p>
+                                    <img class="img-fluid" src="images/lostrends.png" alt="screenshot">
+                                    <br>
+                                    <h2 class="short-hr-left">Organization Trends</h2>
+                                    <p>How does an Organization affect length of time from intake to adoption?</p>
+                                    <img class="img-fluid" src="images/orgtrends.png" alt="screenshot">
+                                    <br>
+                                    <h2 class="short-hr-left">Trends Over Time</h2>
+                                    <p>How does intake vary over time?</p>
+                                    <img class="img-fluid" src="images/trendsovertime.png" alt="screenshot">
+                                    <br>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="button secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game Card End -->
+                <!-- Game Card Ride -->
                 <div class="row game-card pc new">
                     <div class="col-lg-12 col-xl-5 game-card-left">
                         <a href="https://vimeo.com/717637676" class="js-video-button" data-video-id='717637676' data-channel="vimeo"> <!-- Video link goes here -->
@@ -248,9 +305,10 @@
                             </div>
                         </div>
                      </div>
-                </div><!-- Game Card End -->
+                </div>
+                <!-- Game Card End -->
 
-                <!-- Game Card Video -->
+                <!-- Game Card Vapor -->
                 <div class="row game-card mobile new">
                     <div class="col-lg-12 col-xl-5 game-card-left">
                         <a href="https://vimeo.com/717647784" class="js-video-button" data-video-id='717647784' data-channel="vimeo"> <!-- Video link goes here -->
@@ -323,9 +381,10 @@
                             </div>
                         </div>
                      </div>
-                </div><!-- Game Card End -->
+                </div>
+                <!-- Game Card End -->
 
-                <!-- Game Card -->
+                <!-- Game Card Yelp Me Obi Wan -->
                 <div class="row game-card pc">
                     <div class="col-lg-12 col-xl-5 game-card-left">
                         <a href="images/yelp3large.png" data-lightbox="screenshots_aurora">
@@ -400,9 +459,10 @@
                             </div>
                         </div>
                      </div>
-                </div><!-- Game Card End -->
+                </div>
+                <!-- Game Card End -->
 
-                <!-- Game Card -->
+                <!-- Game Card Input -->
                 <div class="row game-card mobile">
                     <div class="col-lg-12 col-xl-5 game-card-left">
                         <a href="images/inputlarge.png" data-lightbox="screenshots_dark">
@@ -465,7 +525,8 @@
                             </div>
                         </div>
                     </div>
-                </div><!-- Game Card End -->
+                </div>
+                <!-- Game Card End -->
             </div>
         </div>
         <!-- /// TEAM SECTION /// -->
@@ -518,42 +579,17 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <h2 class="short-hr-left">LEAVE ME A MESSAGE</h2>
-                        <form id="contactFormSub" action="https://formsubmit.co/acfd5afa755a770716298f8b513cd0ac" method="POST">
-                            <div class="form-group">
-                                <!-- Name Field -->
-                                <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email Field -->
-                                <input type="email" id="email" name="email" class="form-control" placeholder="Email Address" required>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Message Field -->
-                                <textarea id="message" name="message" placeholder="Your Message" class="form-control" name="message" rows="5" required></textarea>
-                                <p class="subtle">* required field</p>
-                                <div class="help-block with-errors"></div>
-                                <!-- Submit Button -->
-                                <button type="submit" class="button">SEND MESSAGE</button>
-                                <!-- Success Message -->
-                                <div id="msgSubmit" class="text-center hidden"></div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-md-6">
                         <h2 class="short-hr-left">MY DETAILS</h2>
                         <div id="contact-info">
                             <ul>
                                 <!-- <li><i class="fa fa-phone"></i><p>Phone: <span class="colored"><a href="tel:+1(815)">+1 (815) </a></span></p></li> -->
-                                <li><i class="fa fa-envelope"></i><p>Email: <span class="colored"><a href="mailto:Jared-Kunhart@proton.me">Jared-Kunhart@proton.me</a></span></p></li>
+                                <li><i class="fa fa-envelope"></i><p>Email: <span class="colored"><a href="mailto:JaredLK@pm.me">JaredLK@pm.me</a></span></p></li>
                                 <li><i class="fa fa-solid fa-file"></i><p>Resume: <span class="colored"><a href="files/Jared_Kunhart_Resume.pdf" download>Download PDF</a></span></p></li>
                                 <li><i class="fa fa-map-marker"></i><p>Address: <span class="colored">South Chicagoland Area</span></p></li>
                             </ul>
                         </div>
                         <!-- Google Map -->
-                        <div id="map-canvas"></div>
+                        <!-- <div id="map-canvas"></div> -->
                     </div>
                 </div>
             </div>
